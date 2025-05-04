@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsas Élida feito a mão de Crochê na cor Salmão</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 900px; margin: auto; background-color: white; padding: 20px; border-radius: 8px; }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .button {
+            background-color: #6A1B9A; color: white; padding: 10px 20px; text-align: center;
+            border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;
+        }
+        .button:hover { background-color: #9C27B0; }
+    </style>
+</head>
+<body>
+
+<div id="header"></div>
+<script>
+fetch('./components/header.html') // subpasta
+.then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+<div class="container">
+    <h2>Bolsas Élida feito a mão de Crochê na cor Salmão</h2>
+    <div class="gallery">
+        <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/vgctzmnn/dwc_0228.jpg" alt="Imagem 1">
+        <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/fjzohilj/dwc_0233.jpg" alt="Imagem 2">
+        <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/ibevpyxa/dwc_0234.jpg" alt="Imagem 3">
+        <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/vxxuabym/dwc_0230.jpg" alt="Imagem 4">        
+    </div>
+    <p><strong>Detalhe:</strong> A Bolsa Élida em crochê, confeccionada com fio de malha, alça 
+        de corrente dourada, fecho imantado, forro em algodão/poliéster e tassel removível 
+        é um item que une o artesanal ao moderno. A cor Salmão, somada à textura do crochê 
+        e ao brilho dourado, cria um acessório único e de personalidade, ideal para viagens 
+        de verão, looks de praia e muito mais.</p> 
+        {
+            text-align: justify;
+        }
+    <p><strong>Preço:</strong> 325,41</p>
+    <p><strong>Descrição:</strong> Bolsas Élida feito a mão de Crochê na cor Bege.</p>
+    <p><strong>Material:</strong> Fio de crochê</p>
+    <p><strong>Cor:</strong> Salmão</p>
+    <p><strong>Tamanho:</strong> Dimensões: Altura - 19 cm, Comprimento - 26 cm, Largura - 3 cm.</p>
+    <p><strong>Exclusividade:</strong> Peça única e feita à mão, demonstrando seu bom gosto e estilo pessoal.</p>
+    <p><strong>Segurança:</strong> Fecho imantado e forro trazendo mais segurança aos seus pertences.</p> 
+    <p><strong>Garantia:</strong> 3 meses</p> 
+    <p><strong>Alça:</strong> Longa e ajustável</p> 
+s
+    <button class="button" onclick="window.history.back()">Voltar</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsas Élida feito a mão de Crochê na cor Dourada</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 900px; margin: auto; background-color: white; padding: 20px; border-radius: 8px; }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            justify-content: flex-start; /* Garante que as imagens fiquem alinhadas à esquerda */
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-info {
+            margin-top: 20px;
+            text-align: left; /* Alinha os textos à esquerda */
+        }
+        .product-info h2 {
+            font-size: 24px;
+            text-align: left; /* Alinha o título à esquerda */
+        }
+        .product-info p {
+            font-size: 16px;
+            text-align: left; /* Alinha os parágrafos à esquerda */
+            line-height: 2; /* Aumenta o espaçamento entre as linhas */
+            margin-bottom: 10px; /* Aumenta o espaçamento entre os parágrafos */
+        }
+        .product-info .detalhe {
+            text-align: justify; /* Justifica o texto do detalhe */
+        }
+        .product-card {
+            margin-bottom: 20px; /* Espaçamento entre os cards */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para os cards */
+        }
+
+        .product-info .informacoes {
+            text-align: left; /* Justifica o texto do detalhe */
+            line-height: 0.5; /* Aumenta o espaçamento entre as linhas */
+
+        }
+        .button {
+            background-color: #6A1B9A; color: white; padding: 10px 20px; text-align: center;
+            border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;
+        }
+        .button:hover { background-color: #9C27B0; }
+    </style>
+</head>
+<body>
+
+<div id="header"></div>
+<script>
+fetch('./components/header.html') // subpasta
+.then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+<div class="container">
+
+    <!-- Primeiro Container: Imagem, Preço e Detalhe -->
+    <div class="product-card">
+        <h2>Bolsas Élida feito a mão de Crochê na cor Dourada</h2>
+        <div class="gallery">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/bsvleyet/dwc_0238.jpg" alt="Imagem 1">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/srlwyyos/dwc_0236.jpg" alt="Imagem 2">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/hdmexriu/dwc_0240.jpg" alt="Imagem 3">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/tarcilaramos/media/uploads/produtos/foto/ohxpmadg/dwc_0235.jpg" alt="Imagem 4">    
+        </div>
+        <div class="product-info">
+            <p><strong>Detalhe:</strong> A Bolsa Élida em crochê, confeccionada com fio de malha, alça de corrente dourada, fecho imantado, 
+                forro em algodão/poliéster e tassel removível é um item que une o artesanal ao moderno. A cor Bege, somada à textura do crochê e ao brilho dourado, 
+                cria um acessório único e de personalidade, ideal para viagens de verão, looks de praia e muito mais.</p> 
+            <p><strong>Preço:</strong> 325,41</p>
+        </div>
+    </div>
+
+    <!-- Segundo Container: Descrição e outras informações -->
+    <div class="product-card">
+        <div class="informacoes">
+            <p><strong>Descrição:</strong> Bolsas Lilis feitas a mão de Crochê na cor Dourada.</p>
+            <p><strong>Material:</strong> Fio de crochê</p>
+            <p><strong>Cor:</strong> Salmão</p>
+            <p><strong>Tamanho:</strong> Dimensões: Altura - 19 cm, Comprimento - 26 cm, Largura - 3 cm.</p>
+            <p><strong>Exclusividade:</strong> Peça única e feita à mão, demonstrando seu bom gosto e estilo pessoal.</p>
+            <p><strong>Segurança:</strong> Fecho imantado e forro trazendo mais segurança aos seus pertences.</p> 
+            <p><strong>Garantia:</strong> 3 meses</p> 
+            <p><strong>Alça:</strong> Longa e ajustável</p> 
+        </div>
+    </div>
+
+</div>
+
+<button class="button" onclick="window.history.back()">Voltar</button>
+
+<footer style="text-align: center; margin-top: 20px; background-color: #25D366; padding: 15px; border-radius: 8px;">
+    <p style="margin: 0;">Contate-nos no WhatsApp:</p>
+    <a href="https://wa.me/55999119666" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+    </a>
+</footer>
+
+</body>
+</html>
